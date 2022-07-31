@@ -1,0 +1,21 @@
+<html>
+    <form method="post" action="/register" enctype="multipart/form-data">
+        <% if(typeof error!= 'undefined') { %>
+            <p> <%= error %></p>
+        <% } %>
+        <label for="username">Username</label>
+        <br>
+        <input required type="text" name="username" placeholder="Masukkan Username Anda">
+        
+        <br>
+
+        <label for="password">Password</label>
+        <br>
+        <input required type="password" name="password" placeholder="Masukkan password anda">
+        <br>
+
+        <input required type="file" name="avatar">
+
+        <button type="submit">Register</button>
+    </form>
+</html>
